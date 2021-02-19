@@ -3,6 +3,11 @@ git config --global user.email email     /*Informarcion para git*/
 
 git add .  /*Registrar los cambios que llevamos*/
 git commit -m "mensaje"  /*Ponerle un mensaje a los cambios registrados*/
+git commit -am "mensaje" /*Agrega los cambios de archivos ya existentes y permite poner mensaje en la linea de comandos*/
+
+git restet HEAD -- [archivo] /*Restablece los cambios que se le han hecho al archivo indicado*/
 
 git remote add origin url  /*Asignarlo a nuestro repositorio en github*/
+git remote add [nombre] [url] /*Asigna otro remoto a nuestro repositorio especialmente útil al trabajar con forks*/
 git push origin master     /*Subir los registros a Github*/
+git puch [remote] [branch] /*Indica a que remoto y a cúal rama subir nuestros cambios*/
